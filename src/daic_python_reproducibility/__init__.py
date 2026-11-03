@@ -1,6 +1,6 @@
 """
 DAIC-python-reproducibility: A great package.
-"""  # noqa: E501, RUF100
+"""  # noqa: D200, D212, E501, RUF100
 
 from __future__ import annotations
 

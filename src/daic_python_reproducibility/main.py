@@ -22,14 +22,14 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
-def foo1(a):
+def foo1(a):  # noqa: D103
     c = a + 1
     if a > 0 and a > 10:
         return 10
     return a + c
 
 
-def foo3(a):
+def foo3(a):  # noqa: D103
     b = 0  # noqa: F841
     d = 0  # noqa: F841
     e = 0  # noqa: F841
@@ -40,7 +40,7 @@ def foo3(a):
     return a + c
 
 
-def foo4():
+def foo4():  # noqa: D103
 
     menu_1 = {"1": "Start Game", "2": "Load Game", "3": "Options", "4": "Exit"}
 
@@ -56,7 +56,7 @@ def foo4():
     return menu_1, menu_2
 
 
-def main() -> None:
+def main() -> None:  # noqa: D103
     print(f"Running daic_python_reproducibility version {__version__}")
     print(f"Result is: 1+2 = {add(1, 2)}")
 
