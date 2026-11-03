@@ -38,6 +38,8 @@ Homepage = "https://github.com/tychu/DAIC-python-reproducibility"
 
 [project.scripts]
 main_script = "daic_python_reproducibility.main:main"
+project-info = "daic_python_reproducibility.auto.project_info:show_project_info"
+run-tests = "daic_python_reproducibility.auto.run_tests:run_tests"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
