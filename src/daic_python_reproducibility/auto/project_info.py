@@ -4,6 +4,7 @@ from pathlib import Path
 
 
 def show_project_info():  # noqa: D103
+    # test
     print("Python version:", sys.version.split()[0])
     print("Platform:", platform.system(), platform.release())
     print("Current directory:", Path.cwd())
