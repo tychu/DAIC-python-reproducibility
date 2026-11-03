@@ -29,6 +29,15 @@ def foo1(a):
     return a + c
 
 
+def foo3(a):
+    b = 0  # noqa: F841
+    c = a + 1
+    if a > 0:  # noqa: SIM102
+        if a > 10:
+            return 10
+    return a + c
+
+
 def main() -> None:
     print(f"Running daic_python_reproducibility version {__version__}")
     print(f"Result is: 1+2 = {add(1, 2)}")
