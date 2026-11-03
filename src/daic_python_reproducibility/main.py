@@ -32,6 +32,7 @@ def foo1(a):
 def foo3(a):
     b = 0  # noqa: F841
     d = 0  # noqa: F841
+    e = 0  # noqa: F841
     c = a + 1
     if a > 0:  # noqa: SIM102
         if a > 10:
