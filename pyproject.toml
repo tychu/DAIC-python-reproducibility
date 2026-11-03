@@ -21,6 +21,8 @@ dev = [
   "ruff>=0.15.7",
   "setuptools-scm>=8.3.1",
   "zensical>=0.0.29",
+  "jupyter>=1.0.0,<2",
+  "ipykernel>=6.29,<7",
 ]
 
 [build-system]
