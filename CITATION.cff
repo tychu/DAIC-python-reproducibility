@@ -12,6 +12,7 @@ authors:
     affiliation: TU Delft
 repository-code: https://github.com/tychu/DAIC-python-reproducibility
 license: GPL-3.0-or-later
+relase_date: 03_11_2026
 # identifiers:
 #   - type: doi
 #     value: 10.5281/zenodo.1234 # Uncomment this and replace it with a real DOI
