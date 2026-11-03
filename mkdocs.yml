@@ -1,4 +1,4 @@
-site_name: DAIC-python-reproducibility
+site_name: Very Cool Docs
 site_description: Documentation for DAIC-python-reproducibility
 site_author: tingying chu
 
@@ -7,6 +7,7 @@ repo_url: https://github.com/tychu/DAIC-python-reproducibility
 nav:
   - Home:
       - index.md
+  - My First Page: my-first-page.md
 
 theme:
   language: en
