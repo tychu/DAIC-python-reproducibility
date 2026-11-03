@@ -8,6 +8,32 @@ on:
     branches:
       - '**'
 
+notebook_check:
+  runs-on: ubuntu-24.04
+
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v7
+      with:
+        version: latest
+
+    - name: Install the project and its dependencies
+      run: uv sync
+
+    - name: Execute Jupyter Notebook
+      run: uv run jupyter execute src/py_course_demo/auto/auto_handson.ipynb
+
+  stage: test
+  before_script:
+    - uv sync
+  script:
+    - uv run jupyter execute src/py_course_demo/auto/auto_handson.ipynb
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'push' || $CI_PIPELINE_SOURCE == 'merge_request_event'
+
 jobs:
   pytest_commit:
     runs-on: ubuntu-24.04
