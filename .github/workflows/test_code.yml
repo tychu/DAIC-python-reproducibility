@@ -46,4 +46,4 @@ jobs:
         run: uv sync
 
       - name: Execute Jupyter Notebook
-        run: uv run jupyter execute src/py_course_demo/auto/auto_handson.ipynb
+        run: uv run jupyter execute src/daic_python_reproducibility/auto/auto_handson.ipynb
